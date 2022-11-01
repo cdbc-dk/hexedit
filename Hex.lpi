@@ -23,6 +23,9 @@
       <MinorVersionNr Value="1"/>
       <StringTable LegalCopyright="(c) 2021, Werner Pamler" OriginalFilename="hex" ProductName="Hex"/>
     </VersionInfo>
+    <MacroValues Count="1">
+      <Macro1 Name="LCLWidgetType" Value="qt"/>
+    </MacroValues>
     <BuildModes Count="3">
       <Item1 Name="Default" Default="True"/>
       <Item2 Name="Debug">
@@ -30,7 +33,7 @@
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/Hex"/>
+            <Filename Value="..\bin\$(TargetCPU)-$(TargetOS)\Hex"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
@@ -68,7 +71,7 @@
           <Version Value="11"/>
           <PathDelim Value="\"/>
           <Target>
-            <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/Hex"/>
+            <Filename Value="..\bin\$(TargetCPU)-$(TargetOS)\Hex"/>
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
@@ -89,6 +92,9 @@
           </Linking>
         </CompilerOptions>
       </Item3>
+      <SharedMatrixOptions Count="1">
+        <Item1 ID="373686496308" Modes="Default" Type="IDEMacro" MacroName="LCLWidgetType" Value="qt"/>
+      </SharedMatrixOptions>
     </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
@@ -272,7 +278,7 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/Hex"/>
+      <Filename Value="hexedit"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
@@ -281,7 +287,7 @@
     </SearchPaths>
     <Linking>
       <Debugging>
-        <DebugInfoType Value="dsDwarf2"/>
+        <DebugInfoType Value="dsDwarf3"/>
       </Debugging>
       <Options>
         <Win32>
