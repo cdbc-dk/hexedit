@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectOptions>
+    <Version Value="12"/>
+    <PathDelim Value="\"/>
+    <General>
+      <Flags>
+        <CompatibilityMode Value="True"/>
+      </Flags>
+      <SessionStorage Value="InProjectDir"/>
+      <Title Value="Hex"/>
+      <Scaled Value="True"/>
+      <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
+    </General>
+    <VersionInfo>
+      <UseVersionInfo Value="True"/>
+      <MajorVersionNr Value="1"/>
+      <MinorVersionNr Value="1"/>
+      <StringTable LegalCopyright="(c) 2021, Werner Pamler" OriginalFilename="hex" ProductName="Hex"/>
+    </VersionInfo>
+    <BuildModes Count="3">
+      <Item1 Name="Default" Default="True"/>
+      <Item2 Name="Debug">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/Hex"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="thirdparty"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <Parsing>
+            <SyntaxOptions>
+              <IncludeAssertionCode Value="True"/>
+            </SyntaxOptions>
+          </Parsing>
+          <CodeGeneration>
+            <Checks>
+              <IOChecks Value="True"/>
+              <RangeChecks Value="True"/>
+              <OverflowChecks Value="True"/>
+              <StackChecks Value="True"/>
+            </Checks>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <DebugInfoType Value="dsDwarf2Set"/>
+              <UseExternalDbgSyms Value="True"/>
+            </Debugging>
+            <Options>
+              <Win32>
+                <GraphicApplication Value="True"/>
+              </Win32>
+            </Options>
+          </Linking>
+        </CompilerOptions>
+      </Item2>
+      <Item3 Name="Release">
+        <CompilerOptions>
+          <Version Value="11"/>
+          <PathDelim Value="\"/>
+          <Target>
+            <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/Hex"/>
+          </Target>
+          <SearchPaths>
+            <IncludeFiles Value="$(ProjOutDir)"/>
+            <OtherUnitFiles Value="thirdparty"/>
+            <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+          </SearchPaths>
+          <CodeGeneration>
+            <SmartLinkUnit Value="True"/>
+            <Optimizations>
+              <OptimizationLevel Value="3"/>
+            </Optimizations>
+          </CodeGeneration>
+          <Linking>
+            <Debugging>
+              <GenerateDebugInfo Value="False"/>
+            </Debugging>
+            <LinkSmart Value="True"/>
+          </Linking>
+        </CompilerOptions>
+      </Item3>
+    </BuildModes>
+    <PublishOptions>
+      <Version Value="2"/>
+      <UseFileFilters Value="True"/>
+    </PublishOptions>
+    <RunParams>
+      <FormatVersion Value="2"/>
+    </RunParams>
+    <RequiredPackages Count="2">
+      <Item1>
+        <PackageName Value="SynEdit"/>
+      </Item1>
+      <Item2>
+        <PackageName Value="LCL"/>
+      </Item2>
+    </RequiredPackages>
+    <Units Count="24">
+      <Unit0>
+        <Filename Value="Hex.lpr"/>
+        <IsPartOfProject Value="True"/>
+      </Unit0>
+      <Unit1>
+        <Filename Value="hxmain.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="MainForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="hxMain"/>
+      </Unit1>
+      <Unit2>
+        <Filename Value="hxhexeditorframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="HexEditorFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="hxHexEditorFrame"/>
+      </Unit2>
+      <Unit3>
+        <Filename Value="hxglobal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="hxGlobal"/>
+      </Unit3>
+      <Unit4>
+        <Filename Value="hxstrings.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="hxStrings"/>
+      </Unit4>
+      <Unit5>
+        <Filename Value="hxutils.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="hxUtils"/>
+      </Unit5>
+      <Unit6>
+        <Filename Value="thirdparty\mrumanager.pp"/>
+        <IsPartOfProject Value="True"/>
+      </Unit6>
+      <Unit7>
+        <Filename Value="thirdparty\mphexeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MPHexEditor"/>
+      </Unit7>
+      <Unit8>
+        <Filename Value="hxdatamodule.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CommonData"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <UnitName Value="hxDataModule"/>
+      </Unit8>
+      <Unit9>
+        <Filename Value="hxbasicviewerframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="BasicViewerFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="hxBasicViewerFrame"/>
+      </Unit9>
+      <Unit10>
+        <Filename Value="hxdataviewerframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="DataViewerFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="hxDataViewerFrame"/>
+      </Unit10>
+      <Unit11>
+        <Filename Value="hxsettingsdlg.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SettingsForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="hxSettingsDlg"/>
+      </Unit11>
+      <Unit12>
+        <Filename Value="hxgotodlg.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="GotoForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="hxGotoDlg"/>
+      </Unit12>
+      <Unit13>
+        <Filename Value="hxrecordviewerframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RecordViewerFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="hxRecordViewerFrame"/>
+      </Unit13>
+      <Unit14>
+        <Filename Value="hxrecordeditorform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="RecordEditorForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="hxRecordEditorForm"/>
+      </Unit14>
+      <Unit15>
+        <Filename Value="hxvieweritems.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="hxViewerItems"/>
+      </Unit15>
+      <Unit16>
+        <Filename Value="hxviewergrids.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="hxViewerGrids"/>
+      </Unit16>
+      <Unit17>
+        <Filename Value="hxobjectviewerframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="ObjectViewerFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="hxObjectViewerFrame"/>
+      </Unit17>
+      <Unit18>
+        <Filename Value="hxgridviewerframe.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="GridViewerFrame"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Frame"/>
+        <UnitName Value="hxGridViewerFrame"/>
+      </Unit18>
+      <Unit19>
+        <Filename Value="hxabout.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="AboutForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="hxAbout"/>
+      </Unit19>
+      <Unit20>
+        <Filename Value="hxpascalrecordform.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="PascalRecordForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="hxPascalRecordForm"/>
+      </Unit20>
+      <Unit21>
+        <Filename Value="hxsearchreplacedlg.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="SearchReplaceForm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="hxSearchReplaceDlg"/>
+      </Unit21>
+      <Unit22>
+        <Filename Value="hxhexeditor.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="hxHexEditor"/>
+      </Unit22>
+      <Unit23>
+        <Filename Value="thirdparty\mphexeditorex.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="MPHexEditorEx"/>
+      </Unit23>
+    </Units>
+  </ProjectOptions>
+  <CompilerOptions>
+    <Version Value="11"/>
+    <PathDelim Value="\"/>
+    <Target>
+      <Filename Value="../bin/$(TargetCPU)-$(TargetOS)/Hex"/>
+    </Target>
+    <SearchPaths>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <OtherUnitFiles Value="thirdparty"/>
+      <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
+    </SearchPaths>
+    <Linking>
+      <Debugging>
+        <DebugInfoType Value="dsDwarf2"/>
+      </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
+    </Linking>
+  </CompilerOptions>
+  <Debugging>
+    <Exceptions Count="5">
+      <Item1>
+        <Name Value="EAbort"/>
+      </Item1>
+      <Item2>
+        <Name Value="ECodetoolError"/>
+      </Item2>
+      <Item3>
+        <Name Value="EFOpenError"/>
+      </Item3>
+      <Item4>
+        <Name Value="ELayoutException"/>
+      </Item4>
+      <Item5>
+        <Name Value="PNGImageException"/>
+      </Item5>
+    </Exceptions>
+  </Debugging>
+</CONFIG>

@@ -1,0 +1,13 @@
+object HexEditorFrame: THexEditorFrame
+  Left = 0
+  Height = 395
+  Top = 0
+  Width = 812
+  TabOrder = 0
+  DesignLeft = 340
+  DesignTop = 128
+  object SaveDialog: TSaveDialog
+    Left = 326
+    Top = 78
+  end
+end
